@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="attempted-body">
+        <div class="attempted-topic">
+            <span>
+            <h1>YOUR'S----'Scores'----LIST🤦‍♂️</h1>
+            </span>
+            <span>
+              <h2>Go to <a href="/login" class='home-btn'type="button"> Login</a></h2>  
+            </span>
+        </div>
+       <div class="attempted-container">
+        <div class="attempted1">
+            <h1 class="attempted-h">QUIZ NAME</h1>
+        </div>
+        <div class="attempted2">
+            <h1 class="attempted-h">AUTHOR OF THE QUIZ</h1>
+        </div>
+        <div class="attempted3">
+            <h1 class="attempted-h">SCORE</h1>
+        </div>
+       </div>
+       <div class="attempted-container">
+        <div class="attempted1">
+            <!-- <h1 class="attempted-h">QUIZ NAME</h1> -->
+            <% QUIZNAMES.forEach(item=>{%>
+                <ul>
+                    <li>
+                        <h2><%=  item%></h2>
+                    </li>
+                </ul>
+            <%})%> 
+        </div>
+        <div class="attempted2">
+            <!-- <h1 class="attempted-h">AUTHOR OF THE QUIZ</h1> -->
+            <% AUTHOR.forEach(item=>{%>
+                <ul>
+                    <li>
+                        <h2><%=item%></h2>
+                    </li>
+                </ul>
+            <%})%> 
+        </div>
+        <div class="attempted3">
+            <!-- <h1 class="attempted-h">SCORE</h1> -->
+            <% SCORES.forEach(item=>{%>
+                <ul>
+                    <li>
+                        <h2><%= item%></h2>
+                    </li>
+                </ul>
+            <%})%> 
+        </div>
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

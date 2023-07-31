@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="create-body">
+        <hr>
+        <h1 class="create-page">Create your QUIZ here</h1>
+        <hr>
+<form action='/createQuiz' method="POST">
+<div>
+    <!-- <span>
+    <label class="q">USERNAME</label>
+    <input type="text" required="Mandatory"name='name'>
+</span> -->
+<span>
+    <label class="q">QUIZ NAME</label>
+    <input type="text"required="Mandatory" name="quizname">
+</span>
+</div>
+<hr>
+<hr>
+    <div>
+        <label class="q">QUESTION 1</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="q1">  
+    </div>
+    <div>
+        <label class="q">Opt1</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt1q1">
+        <label class="q">Opt2</label>
+        <input class="quest-inp" type="text" required="Mandatory"name="opt2q1">
+        <label class="q">Opt3</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt3q1">
+        <label class="q">Opt4</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt4q1">
+    </div>
+    <div>
+        <label class="q">ANSWER</label>
+        <input  class="quest-inp" type="text"required="Mandatory" name="ans1">
+    </div>
+
+<br>
+<hr>
+<div class="empty">
+
+</div>
+<br>
+<div>
+    <div>
+        <label class="q">QUESTION 2</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="q2">  
+    </div>
+    
+    <div>
+        <label class="q">Opt1</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt1q2">
+        <label class="q">Opt2</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt2q2">
+        <label class="q">Opt3</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt3q2">
+        <label class="q">Opt4</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt4q2">
+    </div>
+    
+    <div>
+        <label class="q">ANSWER</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="ans2">
+    </div>
+</div>
+<br>
+<hr>
+<div class="empty">
+
+</div>
+<br>
+<div>
+    <div>
+        <label class="q">QUESTION 3</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="q3">  
+    </div>
+    
+    <div>
+        <label class="q">Opt1</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt1q3">
+        <label class="q">Opt2</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt2q3">
+        <label class="q">Opt3</label >
+        <input class="quest-inp" type="text" required="Mandatory"name="opt3q3">
+        <label class="q">Opt4</label>
+        <input class="quest-inp" type="text" required="Mandatory"name="opt4q3">
+    </div>
+    
+    <div>
+        <label class="q">ANSWER</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="ans3">
+    </div>
+</div>
+<br><hr>
+<div class="empty">
+
+</div>
+<br>
+<div>
+    <div>
+        <label class="q">QUESTION 4</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="q4">  
+    </div>
+    
+    <div>
+        <label class="q">Opt1</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="opt1q4">
+        <label class="q">Opt2</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt2q4">
+        <label class="q">Opt3</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt3q4">
+        <label class="q">Opt4</label>
+        <input class="quest-inp" type="text"required="Mandatory" name="opt4q4">
+    </div>
+    
+    <div>
+        <label class="q">ANSWER</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="ans4">
+    </div>
+</div>
+<br>
+<hr>
+<div class="empty">
+
+</div>
+<br>
+<div>
+    <div>
+        <label class="q">QUESTION 5</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="q5">  
+    </div>
+    
+    <div>
+        <label class="q">Opt1</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="opt1q5">
+        <label class="q">Opt2</label>
+        <input  class="quest-inp"type="text" required="Mandatory" name="opt2q5">
+        <label class="q">Opt3</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="opt3q5">
+        <label class="q">Opt4</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="opt4q5">
+    </div>
+    
+    <div>
+        <label class="q">ANSWER</label>
+        <input class="quest-inp" type="text" required="Mandatory" name="ans5">
+    </div>
+</div>
+<hr>
+<button class="btn-create" type='submit'>Create</button>
+<hr>
+<hr>
+</form>
+        <script src="" async defer></script>
+    </body>
+</html>
+

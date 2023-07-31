@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="attending-body">
+        <form action="/attendingQuiz" method="POST">
+            <label class="attend-b">USERNAME</label>
+            <input type="text" name="attendername" placeholder="Username" required="Mandatory">
+            <label class="attend-b">WHOSE QUIZ IT IS</label>
+            <input type="text" name='name' placeholder="User's name as registered" required="Mandatory">
+            <label class="attend-b">QUIZ NAME</label>
+            <input type="text" name="quizname" placeholder="Name of the quiz" required="Mandatory">
+            <h1 class="do">Question 1</h1>
+            <h2> 1)<%= QUEST1 %></h2>
+            <p class="attend-b"><span>1.<%= OPT11 %></span>   <span>2.<%= OPT12 %></span>   <span>3.<%= OPT13 %></span>     <span>4.<%= OPT14 %></span></p>
+            <label class="attend-b">ANSWER:</label>
+            <input type="text" name="ANS1"required="Mandatory">
+            <br>
+            <hr>
+            <h1 class="attend-b">Question 2</h1>
+            <h2 class="attend-b"> 2)<%= QUEST2 %></h2>
+            <p class="attend-b"><span>1.<%= OPT21 %></span>   <span>2.<%= OPT22 %></span>   <span>3.<%= OPT23 %></span>     <span>4.<%= OPT24 %></span></p>
+            <label class="attend-b">ANSWER:</label>
+            <input type="text" name="ANS2" required="Mandatory">
+            <br>
+            <hr>
+            <h1 class="attend-b">Question 3</h1>
+            <h2 class="attend-b"> 3)<%= QUEST3 %></h2>
+            <p class="attend-b"><span>1.<%= OPT31 %></span>   <span>2.<%= OPT32 %></span>   <span>3.<%= OPT33 %></span>     <span>4.<%= OPT34 %></span></p>
+            <label class="attend-b">ANSWER:</label>
+            <input type="text" name="ANS3" required="Mandatory">
+            <br>
+            <hr>
+            <h1 class="attend-b">Question 4</h1>
+            <h2 class="attend-b"> 4)<%= QUEST4 %></h2>
+            <p class="attend-b"><span>1.<%= OPT41 %></span>   <span>2.<%= OPT42 %></span>   <span>3.<%= OPT43 %></span>     <span>4.<%= OPT44 %></span></p>
+            <label class="attend-b">ANSWER:</label>
+            <input type="text" name="ANS4" required="Mandatory">
+            <br>
+            <hr>
+            <h1 class="attend-b">Question 5</h1>
+            <h2 class="attend-b"> 5)<%= QUEST5 %></h2>
+            <p class="attend-b"><span>1.<%= OPT51 %></span>   <span>2.<%= OPT52 %></span>   <span>3.<%= OPT53 %></span>     <span>4.<%= OPT54 %></span></p>
+            <label class="attend-b">ANSWER:</label>
+            <input type="text" name="ANS5" required="Mandatory">
+            <br>
+            <hr>
+            <button class="attend-btn" type='submit'>SUBMIT</l>
+            </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+

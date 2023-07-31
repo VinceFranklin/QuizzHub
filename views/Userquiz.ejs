@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="userpage">
+        <div>
+            <div class="topbar-container"> 
+                <div class="topbar-left">
+                    <span class="logo">QUIZZER</span>
+                </div>
+                <div class="topbar-centre">
+                    <div class="searchbar">
+                    <form action="/Userquiz" method="POST">
+                    <div class="search-container">
+                        <!-- <input type="text" placeholder="Search for other users" class="searchinput"> -->
+                        <!-- <button type="submit" class="btn bt3">HOME</button> -->
+                    </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-links">
+                        <a class="topbarlink" type="button" href="/">Logout</a>
+                        <a class="topbarlink link1" type="button" href="/about">About</a>
+                    </div>
+                    <div>
+                        <img class="topbarimg" src="" alt="pfp">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="Userquiz-container">
+            <div>
+                <h1 class="username">MEET <%= Userquiz %>!!</h1>
+                <h2 class="sub">Quizzes created by <%= Userquiz %></h2>
+              
+            </div>
+            <div>
+                <h2>click on the quiz name to attempt</h2>
+            </div>
+            <%   if(Quiznames){ %>
+                <%   if(Quiznames.length!=0){ %>
+                  <%  Quiznames.forEach(item =>{ %>
+                      <ul>
+                          <li class="dot">
+                              <h1>  <a class="quiznames " href="/otherquiz"> <%= item %> </a></h1>
+                          </li>
+                      </ul>
+                          
+                      <% })%>
+            <% }else{ %>  
+               <h1>No Such or User haven't created any Quiz</h1>
+               <h1 class="emoji">😔</h1>
+           <%  }}%>
+        </div>
+        <div class="input">
+            <form method="post" action='/Userquiz'>
+                <div><label class="sub">Enter the QUIZ NAME to attend</label></div>
+                <div><input type="text" name='QuizName' placeholder="QuizName"></div>    
+            </form>
+        </div>
+
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>
